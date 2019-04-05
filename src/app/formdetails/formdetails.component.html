@@ -1,0 +1,23 @@
+<form [formGroup]="FormDetail" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="recipeId">recipeId</label>
+    <input type="text" class="form-control" formControlName="recipeId" placeholder="Enter recipeId">
+  </div>
+  <div class="form-group">
+    <label for="recipename">recipename</label>
+    <input type="text" class="form-control" formControlName="recipename" placeholder="enter recipename">
+  </div>
+  <div class="form-group">
+    <label for="recipecolor">recipecolor</label>
+    <input type="text" class="form-control" formControlName="recipecolor" placeholder="enter recipecolor">
+  </div>
+  <div class="form-group">
+    <label for="recipecost">recipecost</label>
+    <input type="text" class="form-control" formControlName="recipecost" placeholder="enter recipecost">
+  </div>
+  <div class="form-group">
+    <label for="ingredients">Ingredients</label>
+    <input type="text" class="form-control" formControlName="ingredients" placeholder="enter ingredients">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

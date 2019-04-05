@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="col-md-5">
+    <select class="form-control" (change)="onClick($event)">
+      <option *ngFor="let a of arr; index as i" value="{{a._id}}">
+        {{ a.recipename}}</option>
+    </select>
+  </div>
+  <br>
+  <div *ngIf = "clicked">
+    <button class="btn btn-primary" (click)="btn()">Generate PDF</button>
+  </div>
+</div>
